@@ -1,4 +1,4 @@
-(defproject lein-sqs "0.1.0"
+(defproject lein-sqs "0.1.1-SNAPSHOT"
   :description "lein plugin that wraps 'elasticmq' a local implementation of Amazon Simple Queue Service (SQS)"
   :url "https://github.com/mdaley/lein-sqs"
   :license {:name "Eclipse Public License"
