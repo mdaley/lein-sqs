@@ -11,4 +11,4 @@
                               :creds :gpg}]]
 
   :sqs {:port 8084
-        :sqs-limits "relaxed"})
+        :limits "relaxed"})
