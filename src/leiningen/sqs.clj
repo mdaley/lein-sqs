@@ -16,7 +16,7 @@
         limits (if (= "strict" (config-value project :limits))
                      (SQSLimits/withName "Strict")
                      (SQSLimits/withName "Relaxed"))]
-    (println "lein-sqs: starting in-memory sqs instance on port " port ". mode =" (lower-case (.toString limits)))
+    (println "lein-sqs: starting in-memory sqs instance on port" port "with mode =" (lower-case (.toString limits)))
     (let [server (-> (SQSRestServerBuilder$/MODULE$)
                      (.withPort port)
                      (.withServerAddress (NodeAddress. "http" "localhost" port ""))
